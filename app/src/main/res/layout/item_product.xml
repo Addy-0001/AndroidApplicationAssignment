@@ -25,4 +25,12 @@
         android:layout_height="wrap_content"
         android:text="Product Price"
         android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/productImageView"
+        android:layout_width="250px"
+        android:layout_height="250px"
+        android:src="@drawable/ic_launcher_background"
+        />
+
 </LinearLayout>
