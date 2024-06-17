@@ -8,8 +8,9 @@ data class Product(
     var name: String = "",
     var description: String = "",
     var price: Double = 0.0,
-    val imageUrl: String = ""
+    var imageUrl: String = ""
 ) : Parcelable {
+
     constructor(parcel: Parcel) : this(
         parcel.readString() ?: "",
         parcel.readString() ?: "",

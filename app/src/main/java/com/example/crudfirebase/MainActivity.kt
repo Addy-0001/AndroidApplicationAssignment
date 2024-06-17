@@ -1,6 +1,7 @@
 package com.example.crudfirebase
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
@@ -51,10 +52,11 @@ class MainActivity : AppCompatActivity() {
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
                 val position = viewHolder.adapterPosition
                 val product = productAdapter.currentList[position]
+                val imageUri = Uri.parse(product.imageUrl)
                 productViewModel.deleteProduct(product.id)
                 Snackbar.make(recyclerView, "${product.name} deleted", Snackbar.LENGTH_LONG)
                     .setAction("Undo") {
-                        productViewModel.addProduct(product)
+                        productViewModel.addProduct(product, imageUri)
                     }.show()
             }
         }

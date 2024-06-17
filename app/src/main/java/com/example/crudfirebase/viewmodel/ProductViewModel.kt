@@ -1,5 +1,6 @@
 package com.example.crudfirebase.viewmodel
 
+import android.net.Uri
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.crudfirebase.model.Product
@@ -15,16 +16,16 @@ class ProductViewModel : ViewModel() {
         }
     }
 
-    fun addProduct(product: Product) {
-        repository.addProduct(product) { success ->
+    fun addProduct(product: Product, imageUri: Uri?) {
+        repository.addProduct(product, imageUri) { success ->
             if (success) {
                 fetchProducts() // Refresh the list after adding
             }
         }
     }
 
-    fun updateProduct(product: Product) {
-        repository.updateProduct(product) { success ->
+    fun updateProduct(product: Product, imageUri: Uri?) {
+        repository.updateProduct(product, imageUri) { success ->
             if (success) {
                 fetchProducts() // Refresh the list after updating
             }
