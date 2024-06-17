@@ -25,15 +25,14 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = productAdapter
 
-        productViewModel.products.observe(this, { products ->
-            productAdapter.submitList(products)
-        })
+        productViewModel.products.observe(this, {products -> productAdapter.submitList(products)})
 
         productViewModel.fetchProducts()
 
         // Example add product button click
         findViewById<Button>(R.id.addProductButton).setOnClickListener {
-            val newProduct = Product(name = "New Product", description = "Description", price = 9.99)
+            val newProduct =
+                Product(name = "New Product", description = "Description", price = 9.99)
             productViewModel.addProduct(newProduct)
         }
     }

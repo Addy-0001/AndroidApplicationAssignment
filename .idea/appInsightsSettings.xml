@@ -9,9 +9,9 @@
               <option name="connection">
                 <ConnectionSetting>
                   <option name="appId" value="com.example.crudfirebase" />
-                  <option name="mobileSdkAppId" value="1:508866021554:android:0eb1128fb67d3a9d8c21ab" />
-                  <option name="projectId" value="assignment1-c3785" />
-                  <option name="projectNumber" value="508866021554" />
+                  <option name="mobileSdkAppId" value="1:884152413195:android:a51265b37fe10377c42b0e" />
+                  <option name="projectId" value="assignmentkotlin-ddea4" />
+                  <option name="projectNumber" value="884152413195" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

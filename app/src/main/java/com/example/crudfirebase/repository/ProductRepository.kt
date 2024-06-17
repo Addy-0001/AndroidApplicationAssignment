@@ -1,5 +1,6 @@
 package com.example.crudfirebase.repository
 
+import android.util.Log
 import com.example.crudfirebase.model.Product
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -11,8 +12,15 @@ class ProductRepository {
 
     fun addProduct(product: Product, onResult: (Boolean) -> Unit) {
         product.id = database.push().key ?: ""
+        Log.d("errrrror", "i am called")
         database.child(product.id).setValue(product).addOnCompleteListener {
-            onResult(it.isSuccessful)
+            if(it.isSuccessful){
+                onResult(it.isSuccessful)
+            }
+            else{
+                Log.d("errrrror", it.exception.toString())
+                onResult(false)
+            }
         }
     }
 

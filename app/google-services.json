@@ -1,13 +1,14 @@
 {
   "project_info": {
-    "project_number": "508866021554",
-    "project_id": "assignment1-c3785",
-    "storage_bucket": "assignment1-c3785.appspot.com"
+    "project_number": "884152413195",
+    "firebase_url": "https://assignmentkotlin-ddea4-default-rtdb.firebaseio.com",
+    "project_id": "assignmentkotlin-ddea4",
+    "storage_bucket": "assignmentkotlin-ddea4.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:508866021554:android:0eb1128fb67d3a9d8c21ab",
+        "mobilesdk_app_id": "1:884152413195:android:a51265b37fe10377c42b0e",
         "android_client_info": {
           "package_name": "com.example.crudfirebase"
         }
@@ -15,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBPBjdM0WO2cXeFudRT6Lf1ZxjuVaThn-w"
+          "current_key": "AIzaSyDJUQ4SGDsHnZeSFydVwTfX1oFzk1nCE14"
         }
       ],
       "services": {
