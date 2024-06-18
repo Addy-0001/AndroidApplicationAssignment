@@ -8,6 +8,10 @@ android {
     namespace = "com.example.crudfirebase"
     compileSdk = 34
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.example.crudfirebase"
         minSdk = 27
